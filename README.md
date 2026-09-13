@@ -15,8 +15,8 @@ Form submission
 
 ## Demo
 
-- 90-second walkthrough: https://drive.google.com/file/d/1UdYW-OYmvOS8_ZFLUx6IxmGxspdPIFx7/view?usp=sharing
-- Screenshots: see /screenshots <img width="1512" height="782" alt="1-workflow" src="https://github.com/user-attachments/assets/14b968eb-f19d-48da-b4e1-c3ee0ec56ed4" /> <img width="1507" height="818" alt="2-sheet" src="https://github.com/user-attachments/assets/be441134-2676-44c3-9f2c-7dee55aa37f6" /> <img width="1192" height="490" alt="3-alert" src="https://github.com/user-attachments/assets/c331ea89-e7a7-4d02-b8f8-a2ae6d4c84aa" />
+- 90-second walkthrough: https://drive.google.com/file/d/1UdYW-.../view?usp=sharing
+- Screenshots: see /screenshots
 
 
 
