@@ -1,0 +1,67 @@
+{
+  "name": "Lead Triage - error handler",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "810f9f9e-e1a8-45d2-97ba-7b1dad86604e",
+      "name": "Error Trigger"
+    },
+    {
+      "parameters": {
+        "sendTo": "alerts@example.com",
+        "subject": "=n8n FAILED: {{ $json.workflow.name }}",
+        "emailType": "text",
+        "message": "=Workflow:       {{ $json.workflow.name }}\nFailed at node: {{ $json.execution.lastNodeExecuted }}\n\nError:\n{{ $json.execution.error.message }}\n\nOpen the failed run:\n{{ $json.execution.url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "0e3e8170-83e7-47ca-8e0e-732aca72644b",
+      "name": "Email me the failure",
+      "webhookId": "e4849bb4-37ca-43ed-a42d-b08fdd07d970",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": null,
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Email me the failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "e6ad99be-b832-4ba7-a9d2-79a91e59ed22",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "t0e0tJe8xbQgYTtZ",
+  "tags": []
+}
