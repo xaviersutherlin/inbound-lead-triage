@@ -15,7 +15,7 @@ Form submission
 
 ## Demo
 
-- 90-second walkthrough: https://drive.google.com/file/d/1UdYW-.../view?usp=sharing
+- 90-second walkthrough: https://drive.google.com/file/d/1UdYW-OYmvOS8_ZFLUx6IxmGxspdPIFx7/view?usp=sharing
 - Screenshots: see /screenshots
 
 
